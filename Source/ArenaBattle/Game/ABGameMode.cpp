@@ -31,6 +31,7 @@ void AABGameMode::OnPlayerDead()
 
 void AABGameMode::PreLogin(const FString& Options, const FString& Address, const FUniqueNetIdRepl& UniqueId, FString& ErrorMessage)
 {
+	AB_LOG(LogABNetwork, Log, TEXT("%s"), TEXT("=================================================="));
 	AB_LOG(LogABNetwork, Log, TEXT("%s"), TEXT("Begin"));
 	Super::PreLogin(Options, Address, UniqueId, ErrorMessage);
 	AB_LOG(LogABNetwork, Log, TEXT("%s"), TEXT("End"));
